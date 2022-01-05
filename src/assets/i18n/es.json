@@ -1,0 +1,59 @@
+{
+  "button": {
+    "login": "Iniciar sesión",
+    "sign_up": "Registrarse",
+    "go_to_login": "Volver a Iniciar sesión",
+    "update_user": "Actualizar usuario"
+  },
+  "error": {
+    "database": {
+      "generic": "Error al realizar la acción {{action}} para {{type}}",
+      "propertie": "Error al realizar la acción {{action}} para {{type}} con {{propertie_name}} {{propertie_value}}",
+      "type": {
+        "user": "USER"
+      },
+      "action": {
+        "create": "CREATE",
+        "delete": "DELETE",
+        "get": "GET",
+        "update": "UPDATE"
+      }
+    },
+    "login": {
+      "generic": "Error al intentar loguear el usuario"
+    }
+  },
+  "input": {
+    "label": {
+      "email": "Correo eléctronico",
+      "password": "Contraseña",
+      "name": "Nombre",
+      "search": "Buscar...",
+      "surname": "Apellido"
+    },
+    "placeholder": {
+      "email": "Introduce tu correo eléctronico",
+      "password": "Introduce tu contraseña",
+      "name": "Introduce tu nombre",
+      "surname": "Introduce tu apellido"
+    }
+  },
+  "page_not_found": {
+    "title": "Página no encontrada 404"
+  },
+  "logout": {
+    "title": "Has cerrado la sesión o ha caducado"
+  },
+  "success": {
+    "database": {
+      "generic": {
+        "user": "El usuario ha sido {{action}} con éxito"
+      },
+      "action": {
+        "created": "creado",
+        "delete": "eliminado",
+        "update": "actulizado"
+      }
+    }
+  }
+}
