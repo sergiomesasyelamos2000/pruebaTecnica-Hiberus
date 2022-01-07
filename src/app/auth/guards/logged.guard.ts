@@ -1,12 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 import {
   ActivatedRouteSnapshot,
   CanActivate,
   RouterStateSnapshot,
   UrlTree,
-} from '@angular/router';
-import { Observable } from 'rxjs';
-import { AuthService } from '../service/auth.service';
+} from "@angular/router";
+import { Observable } from "rxjs";
+import { AuthService } from "../service/auth.service";
 
 /**
  * Guardian for check if user is logged in
@@ -18,7 +18,7 @@ export class LoggedGuard implements CanActivate {
 
   canActivate(
     route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot,
+    state: RouterStateSnapshot
   ):
     | boolean
     | UrlTree

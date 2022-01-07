@@ -5,31 +5,31 @@ import {
   HttpInterceptor,
   HttpRequest,
   HttpResponse,
-} from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
-import { decrypt, encrypt } from 'src/app/shared/Utils';
-import { AuthService } from '../service/auth.service';
+} from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { map, Observable } from "rxjs";
+import { decrypt, encrypt } from "src/app/shared/Utils";
+import { AuthService } from "../service/auth.service";
 
 /**
  * Intercepts requests for add headers
  * @class
  */
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class AuthInterceptor implements HttpInterceptor {
   constructor(private authService: AuthService) {}
 
   intercept(
     req: HttpRequest<any>,
-    next: HttpHandler,
+    next: HttpHandler
   ): Observable<HttpEvent<any>> {
     const accessToken = this.authService.accessToken;
 
     const headers = new HttpHeaders({
       Authorization: `Bearer ${accessToken}`,
-      'Accept-Language': this.authService.appLanguage,
+      "Accept-Language": this.authService.appLanguage,
     });
 
     let request = req;
@@ -48,7 +48,7 @@ export class AuthInterceptor implements HttpInterceptor {
           req.body.password = decrypt(req.body.password);
         }
         return req;
-      }),
+      })
     );
   }
 }

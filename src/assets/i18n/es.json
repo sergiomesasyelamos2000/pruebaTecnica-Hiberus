@@ -20,7 +20,7 @@
       }
     },
     "login": {
-      "generic": "Error al intentar loguear el usuario"
+      "generic": "Error al intentar iniciar sesión"
     }
   },
   "input": {
@@ -42,7 +42,7 @@
     "title": "Página no encontrada 404"
   },
   "logout": {
-    "title": "Has cerrado la sesión o ha caducado"
+    "title": "Has cerrado sesión o ha caducado"
   },
   "success": {
     "database": {

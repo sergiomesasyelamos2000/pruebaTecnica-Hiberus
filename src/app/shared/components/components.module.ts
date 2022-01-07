@@ -7,14 +7,12 @@ import { SharedModule } from '../shared.module';
 import { ButtonComponent } from './button/button.component';
 import { InputComponent } from './input/input.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     InputComponent,
     ButtonComponent,
-    NavbarComponent,
-    SearchComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +26,6 @@ import { SearchComponent } from './search/search.component';
     InputComponent,
     ButtonComponent,
     NavbarComponent,
-    SearchComponent,
     FormsModule,
     ReactiveFormsModule,
   ],

@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { recoverAccessToken, removeAccessToken } from '../../shared/Utils';
+import { Injectable } from "@angular/core";
+import { recoverAccessToken, removeAccessToken } from "../../shared/Utils";
 
 /**
  * Authentication service handles user access token
@@ -8,7 +8,7 @@ import { recoverAccessToken, removeAccessToken } from '../../shared/Utils';
 @Injectable()
 export class AuthService {
   private _accessToken?: string;
-  private _appLanguage: string = 'es';
+  private _appLanguage: string = "es";
 
   public set accessToken(accessToken: string | undefined) {
     if (!accessToken) {
