@@ -10,5 +10,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Requirements
 
-- [Backend](https://github.com/aarpei/login-app-backend)
+- [Backend](https://github.com/sergiomesasyelamos2000/appLogin_backend.git)
 - MySQL
